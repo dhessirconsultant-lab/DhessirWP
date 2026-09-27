@@ -1,0 +1,22 @@
+name: dhessir-wp
+recipe: wordpress
+config:
+  webroot: .
+  php: '8.2'
+  database: mariadb:11.4
+  xdebug: false
+
+services:
+  node:
+    type: node:22
+    scanner: false
+
+tooling:
+  npm:
+    service: node
+    dir: /app/wp-content/themes/dhessir
+  build:
+    service: node
+    description: Compila Tailwind y JavaScript del tema
+    dir: /app/wp-content/themes/dhessir
+    cmd: npm run build

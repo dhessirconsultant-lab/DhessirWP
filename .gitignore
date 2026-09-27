@@ -1,0 +1,17 @@
+# Solo se versiona el código propio del sitio.
+# WordPress se descarga con `lando wp core download` y wp-config.php se genera en cada equipo.
+/*
+!/.gitignore
+!/.lando.yml
+!/README.md
+!/database.sql
+!/scripts/
+
+!/wp-content/
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/dhessir/
+!/wp-content/uploads/
+
+/wp-content/themes/dhessir/node_modules/
