@@ -1,0 +1,16 @@
+{
+    "name": "dhessir-tema",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite build --watch"
+    },
+    "devDependencies": {
+        "@fontsource/inter": "^5.0.0",
+        "@fontsource/manrope": "^5.0.0",
+        "@tailwindcss/vite": "^4.0.0",
+        "tailwindcss": "^4.0.0",
+        "vite": "^7.0.0"
+    }
+}
